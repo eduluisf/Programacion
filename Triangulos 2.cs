@@ -11,7 +11,7 @@ namespace Hipotenusa
         static void Main(string[] args)
         {
             // programa 1
-
+            /*
               Console.WriteLine("ingrese la altura");
 
               double y = double.Parse((Console.ReadLine()));
@@ -113,7 +113,7 @@ namespace Hipotenusa
 
             Console.WriteLine("El otro es :  " + (La1));
 
-            
+            */
             
 
 
@@ -141,10 +141,12 @@ namespace Hipotenusa
             Console.WriteLine(Ang);
 
 
+            double CC = 180 - Ang - cb;
+
+            double VZ = Math.Sqrt((Math.Pow(VX, 2)) + (Math.Pow(VY, 2)) - 2 * VX * VY * Math.Cos(CC * Math.PI / 180));
 
 
-
-
+            Console.WriteLine(VZ);
 
 
 
