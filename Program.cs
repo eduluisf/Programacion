@@ -4,40 +4,80 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ifelse
+namespace Parcial_Pruebas
 {
     class Program
     {
         static void Main(string[] args)
         {
+            int contador = 0;
+            string[] nombre = new string[5];
+          
+            string analisis = "";
 
-            int c = int.Parse(Console.ReadLine());
-           double Tarifa = c / 828116;
-
-           if (Tarifa < 2)
-            { Console.WriteLine("Su tarifa es A");   }
-
-           else if (Tarifa > 2 && Tarifa <= 4)
-            {  Console.WriteLine("Su tarifa es B"); }
-
-           else
-           
-            { Console.WriteLine("Su tarifa es C");}
+            string[] vocales = new string[contador];
 
 
+            for (int i = 0; i < nombre.Length; i++)
+            {
+
+                nombre[i] = Console.ReadLine();
+
+            }
 
 
-            if (Tarifa < 2)
-            { Console.WriteLine("Su tarifa es A y su cuota moderadora es $ 3200"); }
-
-            else if (Tarifa > 2 && Tarifa <= 5)
-            { Console.WriteLine("Su tarifa es B: $ 12700"); }
-
-            else
-
-            { Console.WriteLine("Su tarifa es C : $33500"); }
+            for (int i = 0; i < nombre.Length; i++)
+            {
+                analisis = nombre[i];
 
 
+
+                char[] vocal = new char[nombre.Length];
+
+                vocal[i] = analisis[0];
+
+
+               
+
+
+                
+
+                for ( int t=0; t<nombre.Length; t++) { 
+
+                      if (vocal[t] == 'a' || vocal[t] == 'e' || vocal[t] == 'i' ||  vocal[t] == 'o' || vocal[t] == 'u')
+                    {
+
+
+                        contador++;
+
+
+                        Console.WriteLine(analisis);
+
+
+
+                    }
+
+                   
+                    
+
+                       
+                
+
+
+                       
+                    
+
+
+
+                }
+
+
+
+            }
+
+    
+
+       
 
 
 
